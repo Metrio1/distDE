@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Task App</title>
-    <script type="module" crossorigin src="./assets/index-BE8mmvSQ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-UDbj6yTD.css">
+    <script type="module" crossorigin src="./assets/index-B2BNsP5o.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-dSzXK3_o.css">
   </head>
   <body>
     <header class="header">
@@ -333,8 +333,12 @@
       </div>
     </footer>
 
-    <div class="modal modal--isSuccess" id="successModal">
+    <div class="modal modalPopup modalPopup--isSuccess" id="successModal">
       Данные успешно отправлены!
+    </div>
+
+    <div class="modal modalPopup modalPopup--isError" id="errorModal">
+      Произошла ошибка при отправке формы.
     </div>
 
     <div class="modal" id="modalForm">
@@ -352,7 +356,13 @@
         <h3 class="modal__title">Send us a message</h3>
         <form
           class="form"
-          data-js-form='{"url":"https://jsonplaceholder.typicode.com/posts","method":"POST","showModalAfterSuccess":"#successModal","isNeedValidateBeforeSubmit":true,"isNeedValidateBeforeSubmit":true}'
+          data-js-form='{
+            "url": "https://jsonplaceholder.typicode.com/posts",
+            "method": "POST",
+            "showModalAfterSuccess": "#successModal",
+            "showModalAfterError": "#errorModal",
+            "isNeedValidateBeforeSubmit": true
+          }'
         >
           <div class="form__group" data-js-validate-row>
             <label for="name" class="form__label">Full name</label>
