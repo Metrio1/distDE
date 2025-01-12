@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Task App</title>
-    <script type="module" crossorigin src="./assets/index-b6dTl15-.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CtOYUHbU.css">
+    <script type="module" crossorigin src="./assets/index-Bc6Xi2OV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-KSZ1SSDG.css">
   </head>
   <body>
     <header class="header">
@@ -50,7 +50,7 @@
                 Faucibus tristique vulputate ultrices ut mauris tellus at.
                 Posuere sollicitudin odio tellus elit.
               </p>
-              <a href="#" class="hero__button button" type="button">
+              <a href="#" class="hero__button button">
                 See Our Project
               </a>
             </div>
@@ -360,7 +360,9 @@
             "method": "POST",
             "showModalAfterSuccess": "#successModal",
             "showModalAfterError": "#errorModal",
-            "isNeedValidateBeforeSubmit": true
+            "isResetAfterSuccess": true,
+            "isNeedValidateBeforeSubmit": true,
+            "isNeedPreventDefault": true
           }'
         >
           <div class="form__group" data-js-validate-row>
